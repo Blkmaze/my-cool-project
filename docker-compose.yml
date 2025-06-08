@@ -1,8 +1,6 @@
 version: '3.8'
 services:
   web:
-    image: nginx:latest
+    build: .
     ports:
       - "8080:80"
-    volumes:
-      - ./html:/usr/share/nginx/html:ro
